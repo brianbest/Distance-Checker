@@ -1,0 +1,59 @@
+<!doctype html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation project</title>
+    <!-- build:css css/libraries.min.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css css/app.min.css -->
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/app_override.css">
+    <!-- endbuild -->
+    <!-- build:js js/vendor/modernizr.min.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+
+    <div class="row">
+      <div class="small-12 small-centered medium-10 medium-centered large-8 large-centered columns panel radius">
+        <h1>Check dat distance!</h1>
+        <p>Feed these floats, or else</p>
+        <input type="text" id="lat1"><br>
+        <input type="text" id="lon1"><br>
+        <hr>
+        <input type="text" id="lat2"><br>
+        <input type="text" id="lon2"><br>
+        <select id="checkDis">
+          <option value="5">5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+          <option value="20">20</option>
+        </select>
+        <select id="unit">
+          <option value="M">Miles</option>
+          <option value="K">Kilometers</option>
+          <option value="N">Nautical Miles</option>
+        </select>
+        <button onClick="checkIt()">
+        <h2 id="output"></h2>
+      </div>
+    </div>
+
+    <!-- build:js js/vendor/libraries.min.js -->
+    <!-- bower:js -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js js/vendor/foundation.min.js -->
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <!-- endbuild -->
+    <!-- build:js js/app.min.js -->
+    <script src="js/app.js"></script>
+    <script src="js/checker.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
