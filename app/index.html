@@ -23,11 +23,11 @@
       <div class="small-12 small-centered medium-10 medium-centered large-8 large-centered columns panel radius">
         <h1>Check dat distance!</h1>
         <p>Feed these floats, or else</p>
-        <input type="text" id="lat1"><br>
-        <input type="text" id="lon1"><br>
+        <input type="text" id="lat1" placeholder="lat 1"><br>
+        <input type="text" id="lon1" placeholder="lon 1"><br>
         <hr>
-        <input type="text" id="lat2"><br>
-        <input type="text" id="lon2"><br>
+        <input type="text" id="lat2" placeholder="lat 2"><br>
+        <input type="text" id="lon2" placeholder="lon 2"><br>
         <select id="checkDis">
           <option value="5">5</option>
           <option value="10">10</option>
@@ -37,15 +37,16 @@
         <select id="unit">
           <option value="M">Miles</option>
           <option value="K">Kilometers</option>
-          <option value="N">Nautical Miles</option>
         </select>
-        <button onClick="checkIt()">
+        <button onClick="checkIt()">Check</button>
         <h2 id="output"></h2>
       </div>
     </div>
 
     <!-- build:js js/vendor/libraries.min.js -->
     <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/fastclick/lib/fastclick.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js js/vendor/foundation.min.js -->
